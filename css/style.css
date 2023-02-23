@@ -37,6 +37,7 @@ body{
 	background: #000;
 	color: var(--text);
 	font-family: 'Poppins', sans-serif;
+	min-height: 3000px;
 }
 
 
@@ -206,13 +207,16 @@ table {
 
 
 /* about */
+/* about,store,contact snippet */
 .about,
-.store{
+.store,
+.contact{
 	padding:7% 10%;
 }
 
 .about .tittle-2,
-.store .tittle-2{
+.store .tittle-2,
+.contact .tittle-2{
 	font-size: 2.2rem;
 	letter-spacing: 0.4rem;
 	text-transform: uppercase;
@@ -221,7 +225,8 @@ table {
 }
 
 .about .tittle-2::after,
-.store .tittle-2::after{
+.store .tittle-2::after,
+.contact .tittle-2::after{
 	content: '';
 	display: block;
 	width: 20%;
@@ -229,14 +234,16 @@ table {
 	margin: 8pt auto;
 	background: crimson;
 }
-
-.about .content-about{
-	display: flex;
-}
-
 .content-about,
 .content-store{
 	padding-top: 2rem;
+}
+/* end snippet */
+
+
+/* about style */
+.about .content-about{
+	display: flex;
 }
 
 .about .content-about img{
@@ -261,6 +268,7 @@ table {
 	font-weight: 100;
 	letter-spacing: 0.1rem;
 }
+
 
 /* store */
 .store .content-store{
@@ -395,6 +403,60 @@ table {
   -webkit-appearance: none;
 } */
 
+/* contact */
+.contact .row{
+	display: flex;
+	background: #333;
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.contact .row .iframe{
+	width: 100%;
+	object-fit: cover;
+	flex: 1 1 35rem;
+}
+
+.contact .row form{
+	flex: 1 1 25rem;
+	padding: 2.5rem 0;
+}
+
+.contact .row .input-group{
+	margin: 1rem 0;
+}
+
+.contact .row .input-group svg.feather{
+	position: absolute;
+	padding: 0.5rem;
+}
+
+.contact .row .input-group > input{
+	background: #000;
+	border: none;
+	height: 2.3rem;
+	width: 50%;
+	color: #fff;
+	padding-left: 2.5rem;
+	border-radius: 0.5rem;
+}
+.contact .row .btn{
+	display: block;
+	margin-left: 20%;
+	height: 2rem;
+	width: 15%;
+	background: crimson;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 1rem;
+	border-radius: 0.5rem;
+	transition: 0.5s ease all;
+}
+.contact .row .btn:hover{
+	background: none;
+	border: 1px solid crimson;
+}
 
 
 /* media query */
@@ -463,6 +525,14 @@ table {
 	.about .row p{
 		font-size: 1rem;
 		font-weight: 100;
+	}
+
+	.contact .row{
+		flex-wrap: wrap;
+	}
+
+	.contact .row .btn{
+		margin-left: 22%;
 	}
 }
 
@@ -540,5 +610,13 @@ table {
 		padding-left: 2rem;
 	}
 
+	/* contact */
+	.contact .row{
+		flex-wrap: wrap;
+	}
+	.contact .row .input-group > svg.feather{
+		height: 5%;
+		padding: 0;
+	}
 
 }
