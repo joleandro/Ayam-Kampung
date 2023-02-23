@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+    <!-- Coding by CodingLab | www.codinglabweb.com -->
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ayam Kampung</title>
+
+           <!-- link fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
+        
+        <script src="https://unpkg.com/feather-icons"></script>
+        <!-- Swiper CSS -->
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/style.css">
+                                        
+    </head>
+    <body>
+
+    <navbar class="nav" id="nav">
+            <h1 class="tittle">
+                <a href="#"> Ayam <span id="child-tittle">kamp</span></a>
+            </h1>
+
+            <div class="menu-nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#store">Store</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+             <div class="input">
+                <input type="text" class="search" name="search" id="search">
+                <i data-feather="search" id="search"></i>
+            </div> 
+
+            <div class="box-menu">
+                <a href="#" id="cari"><i data-feather="search"></i></a>
+                <a href="#"><i data-feather="shopping-cart"></i></a>
+                <a href="#list" id="list"><i data-feather="align-justify"></i></a>
+            </div>
+    </navbar> 
+
+
+        <!-- home -->
+        <section class="hero" id="home">
+            <main class="container">
+                <h2 class="tittle-3">Come store at our <span class="child-hero">Store</span></h2>
+    
+                <p class="text-hero">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati hic impedit pariatur illum </p>
+                <a href="#store" class="btn-buy">Buy</a>
+            </main>
+        </section>
+        <!-- end home -->
+    
+        <!-- about -->
+        <section class="about" id="about">
+                <h1 class="tittle-2">About</h1>
+                
+                <div class="content-about">
+                    <img src="img/ayam-bg.jpg" alt="background">
+                    
+                    <div class="row">
+                        <h2 class="text">why do you have at ours store ?</h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus dolore rerum</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus tempore voluptates, assumenda Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem dolores dolor modi voluptas. Facere quo similique sint a. Vel, accusamus delectus quis repellendus illo qui sed vero at iusto tempore.</p>
+                    </div>
+                </div>
+        </section> 
+        <!-- end about -->
+    
+        <!-- store -->
+        <section class="store" id="store">
+            <h1 class="tittle-2">Our Stores</h1>
+    
+            <div class="content-store">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur nesciunt iusto quaerat</p>
+            </div>
+
+            <!-- carausel -->
+        <div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/ayam-coklat.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">brown chicken</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">$5.00</button>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/ayam-hitam.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">black chicken</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">$5.00</button>
+                        </div>
+                    </div>
+
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+
+                            <div class="card-image">
+                                <img src="img/ayam-putih.JPG" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">White Chicken</h2>
+                            <p class="description">The lorem text the section that contains header with having open functionality. Lorem dolor sit amet consectetur adipisicing elit.</p>
+
+                            <button class="button">$5.00</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>        
+        </section>
+
+        <!-- contact -->
+            
+        <!-- end contact -->
+
+
+    </body>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+
+    <!-- JavaScript -->
+    <!-- carausel -->
+    <script src="js/script.js"></script>
+
+    <!-- js app -->
+    <script src="js/app.js"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+</html>
