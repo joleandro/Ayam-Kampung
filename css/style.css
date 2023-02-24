@@ -37,7 +37,7 @@ body{
 	background: #000;
 	color: var(--text);
 	font-family: 'Poppins', sans-serif;
-	min-height: 3000px;
+	/* min-height: 3000px; */
 }
 
 
@@ -276,7 +276,7 @@ table {
 	position: relative;
 	justify-content: center;
 }
-.store .content-shop p{
+.store .content-store p{
 	font-size: 0.8rem;
 	text-align: center;
 	letter-spacing: 0.3rem;
@@ -457,6 +457,28 @@ table {
 	background: none;
 	border: 1px solid crimson;
 }
+/* end contact */
+
+
+/* footer */
+footer{
+	background: crimson;
+	height: 5rem;
+	text-align: center;
+	padding: 1rem;
+}
+.footer .sosial-media{
+	padding-bottom:1rem;
+}
+.footer .sosial-media a{
+	margin-right: 1rem;
+}
+.footer .foot a{
+	color: #000;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
 
 
 /* media query */
@@ -501,6 +523,15 @@ table {
 	.store{
 		padding: 10% 10%;
 	}
+
+	/* contact */
+	.contact .row .input-group input{
+		width: 80%;
+	}
+	.contact .row .btn{
+		margin: 0.5rem;
+		width: 25%;
+	}
 }
 
 /* tablet */
@@ -527,12 +558,26 @@ table {
 		font-weight: 100;
 	}
 
+	/* contact */
 	.contact .row{
 		flex-wrap: wrap;
 	}
 
+	.contact .row form{
+		padding: 1rem;
+	}
+	.contact .row .input-group{
+		text-align: start;
+	}
+	.contact .row .input-group input{
+		width: 90%;
+	}
+	.contact .row .input-group > svg.feather{
+		height: 5%;
+		padding: 0;
+	}
 	.contact .row .btn{
-		margin-left: 22%;
+		margin: 0;
 	}
 }
 
@@ -587,9 +632,10 @@ table {
 
 	/* about */
 	.about,
-	.store{
+	.store,
+	.contact{
 		max-width: 420px;
-		padding: 16% 10%;
+		padding: 14% 10%;
 	}
 	.about .content-about{
 		display: block;
@@ -614,9 +660,21 @@ table {
 	.contact .row{
 		flex-wrap: wrap;
 	}
+	.contact .row form{
+		padding: 1rem;
+	}
+	.contact .row .input-group{
+		text-align: start;
+	}
+	.contact .row .input-group input{
+		width: 90%;
+	}
 	.contact .row .input-group > svg.feather{
 		height: 5%;
 		padding: 0;
 	}
-
+	.contact .row .btn{
+		margin: 0;
+		height: 3rem;
+	}
 }
